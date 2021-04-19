@@ -47,7 +47,7 @@
     </b-table>
     <div
       v-else
-      class="text-danger"
+      class="error text-danger"
     >
       {{ errorMsg }}
     </div>
@@ -128,7 +128,7 @@ export default {
     filter (value) {
       if (value) {
         this.$nextTick(() => {
-          this.$emit('suggestion', this.filterResults[0] && this.filterResults[0].countryName);
+          this.$emit('suggestion', this.filterResults && this.filterResults[0] && this.filterResults[0].countryName);
         });
       }
     }

@@ -26,7 +26,6 @@ export default class APIDataProvider {
         data: this._normalizeResults(data.Countries)
       };
     } catch (e) {
-      console.error(e);
       return { error: 'Data could not be fetched.' };
     }
   }

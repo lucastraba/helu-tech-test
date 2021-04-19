@@ -22,9 +22,11 @@ module.exports = {
   },
   modulePathIgnorePatterns: ['<rootDir>/static'],
   rootDir: path.resolve(__dirname),
-  testEnvironment: 'node',
+  testEnvironment: 'jsdom',
   transform: {
     '^.+\\.js$': 'babel-jest',
     '.*\\.(vue)$': 'vue-jest'
-  }
+  },
+  verbose: true,
+  testURL: 'http://localhost/'
 };

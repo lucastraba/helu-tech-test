@@ -14,11 +14,6 @@ export default {
   components: {
     NavBar,
     MainTable
-  },
-  data () {
-    return {
-      searchTerm: null
-    };
   }
 };
 </script>

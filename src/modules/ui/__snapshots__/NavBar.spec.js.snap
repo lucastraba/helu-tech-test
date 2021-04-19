@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar Component should render the nav bar 1`] = `
+"<div class=\\"navigation-bar\\">
+  <bnavbar-stub type=\\"dark\\" variant=\\"dark\\">
+    <bnavbarbrand-stub href=\\"#\\">
+      Covid 19 Tracker by Lucas Traba
+    </bnavbarbrand-stub>
+  </bnavbar-stub>
+</div>"
+`;

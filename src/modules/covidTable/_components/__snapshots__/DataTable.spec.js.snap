@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DataTable Component conditional rendering should render the table provided it is loading and there are no errors 1`] = `
+"<div class=\\"overflow-auto\\">
+  <btable-stub sticky-header=\\"100vh\\" striped=\\"\\" show-empty=\\"\\" foot-clone=\\"\\" sort-direction=\\"desc\\" no-footer-sorting=\\"\\" fields=\\"[object Object],[object Object],[object Object],[object Object]\\" items=\\"\\" busy=\\"true\\" filter=\\"/^/i\\" filter-included-fields=\\"countryName\\"></btable-stub>
+</div>"
+`;
+
+exports[`DataTable Component conditional rendering should render the table provided it is loading and there are no errors 2`] = `
+"<div class=\\"overflow-auto\\">
+  <div class=\\"error text-danger\\">
+    foo
+  </div>
+</div>"
+`;
+
+exports[`DataTable Component conditional rendering should render the table provided there is data and there are no errors 1`] = `
+"<div class=\\"overflow-auto\\">
+  <btable-stub sticky-header=\\"100vh\\" striped=\\"\\" show-empty=\\"\\" foot-clone=\\"\\" sort-direction=\\"desc\\" no-footer-sorting=\\"\\" fields=\\"[object Object],[object Object],[object Object],[object Object]\\" items=\\"1\\" filter=\\"/^/i\\" filter-included-fields=\\"countryName\\"></btable-stub>
+</div>"
+`;

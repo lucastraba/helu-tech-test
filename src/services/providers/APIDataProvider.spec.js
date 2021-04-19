@@ -1,5 +1,6 @@
 import axios from 'axios';
 import APIDataProvider from './APIDataProvider';
+import SearchResultsModel from '@/services/models/SearchResultsModel';
 
 jest.mock('axios');
 
@@ -9,53 +10,42 @@ describe('APIDataProvider', () => {
     provider = new APIDataProvider();
   });
   describe('getSearchResults', () => {
-    it('should return if no search term is introduced', async () => {
+    it('should return an error object if there is an error', async () => {
       // Arrange.
+      axios.get.mockImplementationOnce(() => throw new Error('This is an error'));
       const expected = 'error';
       // Act.
-      const result = await provider.getSearchResults('');
+      const result = await provider.getAllCountriesData();
       // Assert.
       expect(result).toHaveProperty(expected);
     });
-    it('should normalize the search term, build a query, and call axios', async () => {
+    it('should normalize and return the data', async () => {
       // Arrange.
-      const expected = 'https://api.github.com/search/repositories?q=foo+bar&page=1&per_page=10&sort=stars';
-      axios.get.mockResolvedValue({ data: { items: [] } });
-      // Act.
-      await provider.getSearchResults('foo bar');
-      // Assert.
-      expect(axios.get).toHaveBeenCalledWith(expected);
-    });
-    it('should normalize the results', async () => {
-      // Arrange.
-      const expected = {
-        data: [{
-          name: 'foo',
-          url: 'bar'
-        }]
-      };
       axios.get.mockResolvedValue({
         data: {
-          items: [{
-            name: 'foo',
-            html_url: 'bar',
-            baz: 1
+          Countries: [{
+            Country: 'foo',
+            TotalConfirmed: 1,
+            TotalDeaths: 2,
+            TotalRecovered: 3
+          }, {
+            Country: 'bar',
+            TotalConfirmed: 4,
+            TotalDeaths: 5,
+            TotalRecovered: 6
+          }, {
+            Country: 'baz',
+            TotalConfirmed: 7,
+            TotalDeaths: 8,
+            TotalRecovered: 9
           }]
         }
       });
       // Act.
-      const result = await provider.getSearchResults('foo');
+      const result = await provider.getAllCountriesData();
       // Assert.
-      expect(result).toEqual(expected);
-    });
-    it('should return an error message if it fails', async () => {
-      // Arrange.
-      const expected = 'error';
-      axios.get.mockRejectedValueOnce(new Error('foo'));
-      // Act.
-      const result = await provider.getSearchResults('foo');
-      // Assert.
-      expect(result).toHaveProperty(expected);
+      expect(result.data.length).toBe(3);
+      expect(result.data[0]).toBeInstanceOf(SearchResultsModel);
     });
   });
 });

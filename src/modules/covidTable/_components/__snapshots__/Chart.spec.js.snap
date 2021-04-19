@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`C Component conditional rendering should render an error if there is one 1`] = `
+"<div class=\\"chart mx-auto\\">
+  <div class=\\"error text-danger\\">
+    error
+  </div>
+</div>"
+`;
+
+exports[`C Component conditional rendering should render the loading spinner if loading 1`] = `
+"<div class=\\"chart mx-auto\\">
+  <div class=\\"text-center text-danger my-2\\">
+    <bspinner-stub class=\\"align-middle\\"></bspinner-stub> <strong>Loading...</strong>
+  </div>
+</div>"
+`;
+
+exports[`C Component conditional rendering should render the table if data is provided and there are no errors 1`] = `
+"<div class=\\"chart mx-auto\\">
+  <vueapexcharts-stub options=\\"[object Object]\\" type=\\"bar\\" series=\\"[object Object],[object Object],[object Object]\\" width=\\"100%\\" height=\\"auto\\"></vueapexcharts-stub>
+</div>"
+`;
+
+exports[`Cha Component conditional rendering should render an error if there is one 1`] = `
+"<div class=\\"chart mx-auto\\">
+  <div class=\\"error text-danger\\">
+    error
+  </div>
+</div>"
+`;
+
+exports[`Cha Component conditional rendering should render the loading spinner if loading 1`] = `
+"<div class=\\"chart mx-auto\\">
+  <div class=\\"text-center text-danger my-2\\">
+    <bspinner-stub class=\\"align-middle\\"></bspinner-stub> <strong>Loading...</strong>
+  </div>
+</div>"
+`;
+
+exports[`Cha Component conditional rendering should render the table if data is provided and there are no errors 1`] = `
+"<div class=\\"chart mx-auto\\">
+  <vueapexcharts-stub options=\\"[object Object]\\" type=\\"bar\\" series=\\"[object Object],[object Object],[object Object]\\" width=\\"100%\\" height=\\"auto\\"></vueapexcharts-stub>
+</div>"
+`;
+
+exports[`Char Component conditional rendering should render an error if there is one 1`] = `
+"<div class=\\"chart mx-auto\\">
+  <div class=\\"error text-danger\\">
+    error
+  </div>
+</div>"
+`;
+
+exports[`Char Component conditional rendering should render the loading spinner if loading 1`] = `
+"<div class=\\"chart mx-auto\\">
+  <div class=\\"text-center text-danger my-2\\">
+    <bspinner-stub class=\\"align-middle\\"></bspinner-stub> <strong>Loading...</strong>
+  </div>
+</div>"
+`;
+
+exports[`Char Component conditional rendering should render the table if data is provided and there are no errors 1`] = `
+"<div class=\\"chart mx-auto\\">
+  <vueapexcharts-stub options=\\"[object Object]\\" type=\\"bar\\" series=\\"[object Object],[object Object],[object Object]\\" width=\\"100%\\" height=\\"auto\\"></vueapexcharts-stub>
+</div>"
+`;
+
+exports[`Chart Component conditional rendering should render an error if there is one 1`] = `
+"<div class=\\"chart mx-auto\\">
+  <div class=\\"error text-danger\\">
+    error
+  </div>
+</div>"
+`;
+
+exports[`Chart Component conditional rendering should render the loading spinner if loading 1`] = `
+"<div class=\\"chart mx-auto\\">
+  <div class=\\"text-center text-danger my-2\\">
+    <bspinner-stub class=\\"align-middle\\"></bspinner-stub> <strong>Loading...</strong>
+  </div>
+</div>"
+`;
+
+exports[`Chart Component conditional rendering should render the table if data is provided and there are no errors 1`] = `
+"<div class=\\"chart mx-auto\\">
+  <vueapexcharts-stub options=\\"[object Object]\\" type=\\"bar\\" series=\\"[object Object],[object Object],[object Object]\\" width=\\"100%\\" height=\\"auto\\"></vueapexcharts-stub>
+</div>"
+`;
+
+exports[`NavBar Component conditional rendering should render an error if there is one 1`] = `
+"<div class=\\"chart mx-auto\\">
+  <div class=\\"error text-danger\\">
+    error
+  </div>
+</div>"
+`;
+
+exports[`NavBar Component conditional rendering should render the loading spinner if loading 1`] = `
+"<div class=\\"chart mx-auto\\">
+  <div class=\\"text-center text-danger my-2\\">
+    <bspinner-stub class=\\"align-middle\\"></bspinner-stub> <strong>Loading...</strong>
+  </div>
+</div>"
+`;
+
+exports[`NavBar Component conditional rendering should render the table if data is provided and there are no errors 1`] = `
+"<div class=\\"chart mx-auto\\">
+  <vueapexcharts-stub options=\\"[object Object]\\" type=\\"bar\\" series=\\"[object Object],[object Object],[object Object]\\" width=\\"100%\\" height=\\"auto\\"></vueapexcharts-stub>
+</div>"
+`;

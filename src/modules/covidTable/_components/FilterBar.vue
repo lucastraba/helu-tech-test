@@ -24,6 +24,7 @@
           />
           <b-input-group-append>
             <b-button
+              class="clear-filter"
               :disabled="!filter"
               @click="clearFilter"
             >
@@ -35,6 +36,7 @@
     </div>
     <div class="col d-inline-flex flex-row-reverse">
       <b-button
+        class="toggle-view"
         variant="success"
         @click="toggleView"
       >
@@ -67,11 +69,7 @@ export default {
   },
   computed: {
     viewLabel () {
-      if (this.isInGraphView) {
-        return TABLE_VIEWS[0];
-      } else {
-        return TABLE_VIEWS[1];
-      }
+      return (this.isInGraphView) ? TABLE_VIEWS[0] : TABLE_VIEWS[1];
     },
     ghostSuggestion () {
       if (this.filter) {

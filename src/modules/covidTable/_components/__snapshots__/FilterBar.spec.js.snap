@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterBar Component base rendering should not render the filter if in graph view and button should show table view 1`] = `
+"<div class=\\"row\\">
+  <div class=\\"col-6\\">
+    <!---->
+  </div>
+  <div class=\\"col d-inline-flex flex-row-reverse\\">
+    <bbutton-stub variant=\\"success\\" class=\\"toggle-view\\">
+      Show Table
+    </bbutton-stub>
+  </div>
+</div>"
+`;
+
+exports[`FilterBar Component base rendering should render the filter if not in graph view and button should show graph view 1`] = `
+"<div class=\\"row\\">
+  <div class=\\"col-6\\">
+    <bformgroup-stub class=\\"mb-0 filter-field\\">
+      <binputgroup-stub size=\\"sm\\">
+        <bforminput-stub value=\\"\\" type=\\"text\\" tabindex=\\"-1\\" disabled=\\"\\" placeholder=\\"Filter by country\\" class=\\"input ghost-complete\\"></bforminput-stub>
+        <bforminput-stub type=\\"search\\" placeholder=\\"Filter by country\\" value=\\"\\" class=\\"main-input\\"></bforminput-stub>
+        <binputgroupappend-stub>
+          <bbutton-stub disabled=\\"true\\" class=\\"clear-filter\\">
+            Clear
+          </bbutton-stub>
+        </binputgroupappend-stub>
+      </binputgroup-stub>
+    </bformgroup-stub>
+  </div>
+  <div class=\\"col d-inline-flex flex-row-reverse\\">
+    <bbutton-stub variant=\\"success\\" class=\\"toggle-view\\">
+      Show Graph
+    </bbutton-stub>
+  </div>
+</div>"
+`;

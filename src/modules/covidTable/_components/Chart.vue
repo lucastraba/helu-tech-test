@@ -15,7 +15,7 @@
     </div>
     <div
       v-else
-      class="text-danger"
+      class="error text-danger"
     >
       {{ errorMsg }}
     </div>
@@ -47,11 +47,6 @@ export default {
       type: Boolean,
       required: false,
       default: false
-    },
-    suggestion: {
-      type: String,
-      required: false,
-      default: ''
     }
   },
   data () {

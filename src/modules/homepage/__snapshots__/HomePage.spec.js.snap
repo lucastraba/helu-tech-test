@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar Component should render the homepage 1`] = `
+"<div class=\\"home-page\\">
+  <navbar-stub></navbar-stub>
+  <maintable-stub></maintable-stub>
+</div>"
+`;

@@ -60,7 +60,7 @@ export default {
       this.errorMsg = '';
       this.loading = true;
       const results = await this.$restActions.getAllCountriesData();
-      if (!results || results.error) {
+      if (results.error) {
         this.errorMsg = results.error;
       } else if (results && results.data && results.data.length) {
         this.data = results.data;

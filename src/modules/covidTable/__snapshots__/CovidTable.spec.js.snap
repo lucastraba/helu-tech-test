@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CovidTable Component base rendering should render the nav bar in table mode 1`] = `
+"<div class=\\"results-table\\">
+  <filterbar-stub suggestion=\\"\\"></filterbar-stub>
+  <datatable-stub filter=\\"\\" data=\\"\\" errormsg=\\"\\" loading=\\"true\\"></datatable-stub>
+  <chart-stub data=\\"\\" errormsg=\\"\\" loading=\\"true\\" filter=\\"\\" style=\\"display: none;\\"></chart-stub>
+</div>"
+`;
+
+exports[`CovidTable Component conditional rendering should pass the data if everything went 200 OK 1`] = `
+"<div class=\\"results-table\\">
+  <filterbar-stub suggestion=\\"\\"></filterbar-stub>
+  <datatable-stub filter=\\"\\" data=\\"foo\\" errormsg=\\"\\"></datatable-stub>
+  <chart-stub data=\\"foo\\" errormsg=\\"\\" filter=\\"\\" style=\\"display: none;\\"></chart-stub>
+</div>"
+`;
+
+exports[`CovidTable Component conditional rendering should render the nav bar in graph mode 1`] = `
+"<div class=\\"results-table\\">
+  <filterbar-stub suggestion=\\"\\" isingraphview=\\"true\\"></filterbar-stub>
+  <datatable-stub filter=\\"\\" data=\\"\\" errormsg=\\"Something went wrong.\\" style=\\"display: none;\\"></datatable-stub>
+  <chart-stub data=\\"\\" errormsg=\\"Something went wrong.\\" filter=\\"\\" style=\\"\\"></chart-stub>
+</div>"
+`;
+
+exports[`CovidTable Component conditional rendering should render with error message if something failed in the service 1`] = `
+"<div class=\\"results-table\\">
+  <filterbar-stub suggestion=\\"\\"></filterbar-stub>
+  <datatable-stub filter=\\"\\" data=\\"\\" errormsg=\\"error\\"></datatable-stub>
+  <chart-stub data=\\"\\" errormsg=\\"error\\" filter=\\"\\" style=\\"display: none;\\"></chart-stub>
+</div>"
+`;
+
+exports[`CovidTable Component conditional rendering should render with generic error message if no error is provided 1`] = `
+"<div class=\\"results-table\\">
+  <filterbar-stub suggestion=\\"\\"></filterbar-stub>
+  <datatable-stub filter=\\"\\" data=\\"\\" errormsg=\\"Something went wrong.\\"></datatable-stub>
+  <chart-stub data=\\"\\" errormsg=\\"Something went wrong.\\" filter=\\"\\" style=\\"display: none;\\"></chart-stub>
+</div>"
+`;
+
+exports[`NavBar Component base rendering should render the nav bar in table mode 1`] = `
+"<div class=\\"results-table\\">
+  <filterbar-stub suggestion=\\"\\"></filterbar-stub>
+  <datatable-stub filter=\\"\\" data=\\"\\" errormsg=\\"\\" loading=\\"true\\"></datatable-stub>
+  <chart-stub data=\\"\\" errormsg=\\"\\" loading=\\"true\\" suggestion=\\"\\" filter=\\"\\" style=\\"display: none;\\"></chart-stub>
+</div>"
+`;
+
+exports[`NavBar Component conditional rendering should pass the data if everything went 200 OK 1`] = `
+"<div class=\\"results-table\\">
+  <filterbar-stub suggestion=\\"\\"></filterbar-stub>
+  <datatable-stub filter=\\"\\" data=\\"foo\\" errormsg=\\"\\"></datatable-stub>
+  <chart-stub data=\\"foo\\" errormsg=\\"\\" suggestion=\\"\\" filter=\\"\\" style=\\"display: none;\\"></chart-stub>
+</div>"
+`;
+
+exports[`NavBar Component conditional rendering should pass the data if everything went 200 OK 2`] = `
+"<div class=\\"results-table\\">
+  <filterbar-stub suggestion=\\"\\"></filterbar-stub>
+  <datatable-stub filter=\\"\\" data=\\"foo\\" errormsg=\\"\\"></datatable-stub>
+  <chart-stub data=\\"foo\\" errormsg=\\"\\" suggestion=\\"\\" filter=\\"\\" style=\\"display: none;\\"></chart-stub>
+</div>"
+`;
+
+exports[`NavBar Component conditional rendering should render the nav bar in graph mode 1`] = `
+"<div class=\\"results-table\\">
+  <filterbar-stub suggestion=\\"\\" isingraphview=\\"true\\"></filterbar-stub>
+  <datatable-stub filter=\\"\\" data=\\"\\" errormsg=\\"Something went wrong.\\" style=\\"display: none;\\"></datatable-stub>
+  <chart-stub data=\\"\\" errormsg=\\"Something went wrong.\\" suggestion=\\"\\" filter=\\"\\" style=\\"\\"></chart-stub>
+</div>"
+`;
+
+exports[`NavBar Component conditional rendering should render with error message if something failed in the service 1`] = `
+"<div class=\\"results-table\\">
+  <filterbar-stub suggestion=\\"\\"></filterbar-stub>
+  <datatable-stub filter=\\"\\" data=\\"\\" errormsg=\\"error\\"></datatable-stub>
+  <chart-stub data=\\"\\" errormsg=\\"error\\" suggestion=\\"\\" filter=\\"\\" style=\\"display: none;\\"></chart-stub>
+</div>"
+`;
+
+exports[`NavBar Component conditional rendering should render with generic error message if no error is provided 1`] = `
+"<div class=\\"results-table\\">
+  <filterbar-stub suggestion=\\"\\"></filterbar-stub>
+  <datatable-stub filter=\\"\\" data=\\"\\" errormsg=\\"Something went wrong.\\"></datatable-stub>
+  <chart-stub data=\\"\\" errormsg=\\"Something went wrong.\\" suggestion=\\"\\" filter=\\"\\" style=\\"display: none;\\"></chart-stub>
+</div>"
+`;
