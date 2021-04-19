@@ -2,7 +2,7 @@
 @import '~bootstrap-vue';
 @import 'global/all';
 
-.search-input, .results-table {
+.results-table {
   @include add-padding
 }
 
@@ -12,16 +12,5 @@
     width: 100%;
     top: 0;
     bottom: 0;
-  }
-}
-
-.smaller-font {
-  font-size: $smaller;
-  & .regular-font {
-    & svg {
-      font-size: 1.7em;
-      padding-left: $container / 2;
-      vertical-align: middle;
-    }
   }
 }
